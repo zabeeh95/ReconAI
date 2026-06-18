@@ -3,75 +3,187 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Zabeeh Ullah Noor | AI Engineer</title>
+  <title>Zabeeh Ullah Noor | AI Research Engineer</title>
   <link rel="stylesheet" href="style.css"/>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap" rel="stylesheet">
 </head>
-
 <body>
 
 <header>
   <div class="container">
-    <h1>Zabeeh Ullah Noor</h1>
-    <p>AI / Machine Learning Engineer | Computer Vision | Deep Learning</p>
+    <div class="header-content">
+      <div class="profile-section">
+        <div class="avatar">
+          <span>ZN</span>
+        </div>
+        <h1>Zabeeh Ullah Noor</h1>
+        <p class="tagline">AI Research Engineer · Computer Vision · 3D Reconstruction · LLMs</p>
+        <div class="header-badge">
+          <span class="badge">🔬 5+ Years Experience</span>
 
-    <div class="links">
-      <a href="https://github.com/zabeeh95" target="_blank">GitHub</a>
-      <a href="https://linkedin.com/in/thezabeehnoor95" target="_blank">LinkedIn</a>
-      <a href="mailto:zabeeh.noor95@gmail.com">Email</a>
+          <span class="badge">🎯 15+ Projects</span>
+        </div>
+        <div class="links">
+          <a href="https://github.com/zabeeh95" target="_blank" class="btn btn-github">GitHub</a>
+          <a href="https://linkedin.com/in/thezabeehnoor95" target="_blank" class="btn btn-linkedin">LinkedIn</a>
+          <a href="mailto:zabeeh.noor95@gmail.com" class="btn btn-email">Email</a>
+          <a href="#projects" class="btn btn-primary">View Work ↓</a>
+        </div>
+      </div>
     </div>
   </div>
 </header>
 
-<section class="about">
+<!-- About Section -->
+<section class="about" id="about">
   <div class="container">
-    <h2>About Me</h2>
-    <p>
-      I am a Computer Vision and Machine Learning Engineer with 5+ years of experience
-      building deep learning systems for object detection, segmentation, OCR, tracking,
-      and 3D vision. I enjoy working on real-world AI systems and turning research into products.
-    </p>
+    <div class="section-header">
+      <span class="section-tag">About</span>
+      <h2>Building AI That Sees, Understands, and Acts</h2>
+    </div>
+    <div class="about-grid">
+      <div class="about-text">
+        <p>Machine Learning and Computer Vision Engineer with <strong>5+ years</strong> of experience developing AI solutions in <strong>computer vision, deep learning, </strong> robotics, and LLM-powered systems. 
+          Experienced in building end-to-end applications involving object detection, segmentation, OCR, tracking, medical imaging, and retrieval-augmented generation using PyTorch, TensorFlow, OpenCV, and YOLO. 
+          Conducted research in 3D vision and neural rendering, focusing on 3D Gaussian Splatting for sparse-view novel view synthesis and translating cutting-edge research into practical, production-ready AI systems.
+        <p>        
+        <div class="research-interests">
+          <span>🔬 3D Scene Reconstruction</span>
+          <span>🤖 Robotics Vision</span>
+          <span>🧠 Multimodal AI</span>
+          <span>📚 RAG & LLMs</span>
+        </div>
+      </div>
+      <div class="about-stats">
+        <div class="stat-card">
+          <div class="stat-number">5+</div>
+          <div class="stat-label">Years Experience</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-number">15+</div>
+          <div class="stat-label">Projects Delivered</div>
+        </div>
+
+      </div>
+    </div>
   </div>
 </section>
 
-<section class="projects">
+<!-- Projects Section with Category Tabs -->
+<section class="projects" id="projects">
   <div class="container">
-    <h2>Projects</h2>
+    <div class="section-header">
+      <span class="section-tag">Portfolio</span>
+      <h2>Featured Projects</h2>
+      <p>End-to-end AI systems from research to deployment</p>
+    </div>
 
-    <div id="project-list"></div>
+    <!-- Category Filter Tabs -->
+    <div class="filter-tabs">
+      <button class="filter-btn active" data-filter="all">All Projects</button>
+      <button class="filter-btn" data-filter="computer-vision">👁️ Computer Vision</button>
+      <button class="filter-btn" data-filter="machine-learning">🧠 Machine Learning & AI</button>
+      <button class="filter-btn" data-filter="robotics">🤖 Robotics & Hardware</button>
+      <button class="filter-btn" data-filter="fullstack">📱 Full-Stack & Apps</button>
+    </div>
+
+    <div id="project-list" class="project-grid"></div>
   </div>
 </section>
 
-<section class="research">
+<!-- Research Section -->
+<section class="research" id="research">
   <div class="container">
-    <h2>Research</h2>
-    <ul>
-      <li>3D Gaussian Splatting for Novel View Synthesis (NUST Thesis)</li>
-      <li>Depth-guided Neural Rendering and Scene Reconstruction</li>
-      <li>AI-based Flight Data Analysis</li>
-    </ul>
+    <div class="section-header">
+      <span class="section-tag">Research</span>
+      <h2>Publications & Thesis</h2>
+    </div>
+    <div class="research-grid">
+      <div class="research-card">
+        <div class="research-icon">📄</div>
+        <h3>Enhanced Novel View Synthesis via DL-Based 3D Gaussian Splatting</h3>
+        <p>MS Thesis — NUST. Improved sparse-view reconstruction using DepthAnything-V2 geometric priors and composite loss functions.</p>
+        <span class="research-status">Thesis · 2025</span>
+      </div>
+      <div class="research-card">
+        <div class="research-icon">📄</div>
+        <h3>Recent Advancement in 3D Gaussian Splatting</h3>
+        <p>Comprehensive review of 3DGS techniques, benchmarking state-of-the-art methods for novel view synthesis and scene reconstruction.</p>
+        <span class="research-status">Review Paper · 2025</span>
+      </div>
+      <div class="research-card">
+        <div class="research-icon">📄</div>
+        <h3>Towards Incremental & Interpretable Flight Data Analysis</h3>
+        <p>AI-based flight data analysis with interpretable models for anomaly detection and predictive maintenance.</p>
+        <span class="research-status">Conference Paper · 2024</span>
+      </div>
+    </div>
   </div>
 </section>
 
-<section class="skills">
+<!-- Skills Section -->
+<section class="skills" id="skills">
   <div class="container">
-    <h2>Skills</h2>
-    <p>
-      Python • PyTorch • TensorFlow • OpenCV • YOLO • Deep Learning •
-      3D Vision • RAG Systems • FastAPI • Docker • Git
-    </p>
+    <div class="section-header">
+      <span class="section-tag">Expertise</span>
+      <h2>Technical Skills</h2>
+    </div>
+    <div class="skills-grid">
+      <div class="skill-category">
+        <h3>🧠 Deep Learning</h3>
+        <ul>
+          <li>PyTorch · TensorFlow · Keras</li>
+          <li>CNNs · U-Net · ResNet · Transformers</li>
+          <li>Attention Mechanisms · VLMs</li>
+        </ul>
+      </div>
+      <div class="skill-category">
+        <h3>👁️ Computer Vision</h3>
+        <ul>
+          <li>Object Detection · Segmentation · Tracking</li>
+          <li>OCR · Pose & Landmark Detection</li>
+          <li>3D Gaussian Splatting · Depth Estimation</li>
+        </ul>
+      </div>
+      <div class="skill-category">
+        <h3>🤖 AI Systems</h3>
+        <ul>
+          <li>RAG · LLM Pipelines · LangChain</li>
+          <li>FastAPI · Docker · REST APIs</li>
+          <li>MLOps · CI/CD · Deployment</li>
+        </ul>
+      </div>
+      <div class="skill-category">
+        <h3>🛠️ Tools & Languages</h3>
+        <ul>
+          <li>Python · SQL · Git</li>
+          <li>OpenCV · YOLO · MediaPipe</li>
+          <li>PostgreSQL · DigitalOcean</li>
+        </ul>
+      </div>
+    </div>
   </div>
 </section>
 
-<section class="contact">
+<!-- Contact Section -->
+<section class="contact" id="contact">
   <div class="container">
-    <h2>Contact</h2>
-    <p>Email: zabeeh.noor95@gmail.com</p>
-    <p>Location: Lahore, Pakistan</p>
+    <div class="contact-content">
+      <h2>Let's Build Something Amazing</h2>
+      <p>Open to research collaborations, engineering roles, and AI innovation.</p>
+      <div class="contact-links">
+        <a href="mailto:zabeeh.noor95@gmail.com" class="btn btn-primary">📧 Email Me</a>
+        <a href="https://linkedin.com/in/thezabeehnoor95" target="_blank" class="btn btn-linkedin">🔗 LinkedIn</a>
+        <a href="https://github.com/zabeeh95" target="_blank" class="btn btn-github">🐙 GitHub</a>
+      </div>
+    </div>
   </div>
 </section>
 
 <footer>
-  <p>© 2026 Zabeeh Ullah Noor | Built with GitHub Pages</p>
+  <div class="container">
+    <p>© 2026 Zabeeh Ullah Noor · Built with ❤️</p>
+  </div>
 </footer>
 
 <script src="script.js"></script>
