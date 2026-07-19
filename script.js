@@ -12,12 +12,12 @@ const projects = [
     category: "computer-vision"
   },
 
-    {
+  {
     title: "VisionLLM Unified Framework for Image Reasoning",
     desc: "VisionAgent: Multi-modal AI for image understanding. Integrates YOLOv8 for object detection, SmolVLM for scene description, and Phi-3 for intelligent reasoning. Features GPU acceleration, batch processing, bounding box visualization, and a clean Streamlit UI. Open-source and easily configurable.",
     github: "https://github.com/zabeeh95/VisionLLM-Unified-Framework-for-Visual-Reasoning",
     demo: "#",
-    image: "assets/VisionLLM Unified Framework for Image Reasoning.png",
+    image: "assets/VisionLLM-Unified-Framework-for-Visual-Reasoning1.jpg",
     tags: ["VLM", "Image Reasoning", "PyTorch"],
     category: "computer-vision"
   },
