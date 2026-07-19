@@ -11,6 +11,17 @@ const projects = [
     tags: ["3D Vision", "Neural Rendering", "PyTorch"],
     category: "computer-vision"
   },
+
+    {
+    title: "VisionLLM Unified Framework for Image Reasoning",
+    desc: "VisionAgent: Multi-modal AI for image understanding. Integrates YOLOv8 for object detection, SmolVLM for scene description, and Phi-3 for intelligent reasoning. Features GPU acceleration, batch processing, bounding box visualization, and a clean Streamlit UI. Open-source and easily configurable.",
+    github: "https://github.com/zabeeh95/VisionLLM-Unified-Framework-for-Visual-Reasoning",
+    demo: "#",
+    image: "assets/VisionLLM Unified Framework for Image Reasoning.png",
+    tags: ["VLM", "Image Reasoning", "PyTorch"],
+    category: "computer-vision"
+  },
+
   {
     title: "Real-Time People Detection & Tracking",
     desc: "Built a people analytics system using YOLO11 and ByteTrack. Detects pedestrians, assigns persistent IDs, visualizes trajectories, and enables crowd analysis applications.",
