@@ -46,7 +46,7 @@ const projects = [
     github: "https://github.com/zabeeh95/AlphabetRecognitionROT3U",
     demo: "https://youtu.be/BYxyUCkfxNg",
     image: "assets/vision ROT3U.png",
-    tags: ["Robotics", "Kinematics", "Vision"],
+    tags: ["Robotics", "Kinematics", "Vision","Trajectorty Planning"],
     category: "robotics"
   },
 
@@ -153,8 +153,8 @@ const projects = [
     desc: "Designed a distributed acoustic sensing system using Arduino and XBee sensors. Applied triangulation algorithms in MATLAB to estimate sound source positions.",
     github: "https://github.com/zabeeh95/SoundSourceLocalization",
     demo: "#",
-    image: "assets/sound_localization.jpg",
-    tags: ["MATLAB", "ZIGBEE", "Acoustic Sensing"],
+    image: "assets/Sound_Source Localization.png",
+    tags: ["MATLAB", "XBee", "Acoustic Sensing"],
     category: "robotics"
   },
 

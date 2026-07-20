@@ -198,10 +198,11 @@ section {
 
 .about-grid {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 1fr;
   gap: 48px;
   align-items: center;
 }
+
 
 .about-text p {
   color: #c8d0dc;
@@ -648,6 +649,8 @@ footer p {
   font-size: 14px;
   margin-bottom: 24px;
 }
+
+
 /* ===== PROJECT CARD - FLEX LAYOUT FOR ALIGNMENT ===== */
 .project-card {
   background: #141e2e;
@@ -692,4 +695,35 @@ footer p {
   grid-template-columns: repeat(auto-fill, minmax(340px, 1fr));
   gap: 24px;
   align-items: stretch;
+}
+
+
+.skill-tags{
+    display:flex;
+    flex-wrap:wrap;
+    gap:6px;              /* Space between badges */
+    margin-top:12px;
+}
+
+.skill-tags span{
+    display:inline-flex;
+    align-items:center;
+    justify-content:center;
+    padding:4px 10px;     /* Much tighter */
+    border-radius:999px;
+    background:#f3f4f6;
+    color:#333;
+    font-size:0.82rem;
+    font-weight:500;
+    line-height:1.2;
+    border:1px solid #e5e7eb;
+    transition:all .2s ease;
+}
+
+.skill-tags span:hover{
+    background:#2563eb;
+    color:#fff;
+    border-color:#2563eb;
+    transform:translateY(-1px);
+    cursor:default;
 }
